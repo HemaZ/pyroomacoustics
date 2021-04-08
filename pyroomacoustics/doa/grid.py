@@ -110,7 +110,6 @@ class GridCircle(Grid):
 
         # run peak finding
         indexes = detect_peaks(val_ext, show=False) % self.n_points
-        candidates = np.unique(indexes)  # get rid of duplicates, if any
 
         # Select k largest
         peaks = self.values[candidates]
